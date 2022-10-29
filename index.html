@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yummy</title>
+    <!-- fontawsom link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+  <!-- loading -->
+  <div class="loading">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+  
+    <!-- side nav bar -->
+    <aside>
+        <div class="row h-100">
+            <div class="col-10  h-100 bg-black m-0 inner-nav">
+                <ul class="navbar-nav text-white ms-4  ">
+                    <li class="nav-item">
+                      <a class="nav-link" id="search" data-link="search"  >Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="catLink" data-link="category" >Categories</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-link="area" >Area</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-link="ingredients" >Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-link="contact" >Contact Us</a>
+                    </li>
+                  </ul>
+                  <div class="footer ">
+                    <div class="social mb-3 text-center">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-solid fa-globe"></i></span>
+                    </div>
+                    <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p>
+                  </div>
+            </div>
+            <div class="col-2 bg-white py-2 outer-nav">
+                <img class="w-100" src="logo.png" alt="yummy logo">
+                <div class="bars"><i class="fa-solid fa-2xl fa-bars"></i></div>
+                <div class="connect">
+                    <div class="mb-3"><i class="fa-solid fa-globe"></i></div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+            </div>
+        </div>
+        
+    </aside>
+    <main>
+     
+
+        <section id="search">
+          <div id="serach-page">
+            <div class="container">
+              <div class="row mt-5 ">
+                <div class="col-md-6">
+                  <input id="searchname" class="form-control mb-2 " placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                  <input id="searchletter" maxlength="1" class="form-control mb-2 p-auto " placeholder="Search By first letter">
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="container my-5 py-5 position-relative">
+                <div id="data-diplay" class="row g-3">
+                </div>
+                <div class="small-loading text-white position-absolute">
+                  <div class="spinner ">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
+                </div>
+            </div>
+
+
+            
+
+
+        </section>
+
+
+
+        <section id="category" class="mt-5" >
+            <div class="container mt-5">
+              <div class="row g-y-3" id="displaycat">
+                    
+              </div>
+            </div>
+        </section>
+
+        <section id="area">
+          <div class="container mt-5">
+            <div class="row " id="displayarea">
+              
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="ingredients">
+
+          <div class="container my-5">
+            <div class="row my-5 text-center text-white" id="displayingred">
+              
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section id="contact">
+          <div class="container my-5 text-center">
+            <h2 class="text-white">ContacUs...</h2>
+            <div class=" my-5 px-5 inpute-container">
+
+              <form action="" class="row">
+              <div class="col-md-6 my-3">
+                <input type="text" id="uName" class="form-control mb-2 " name="uName" placeholder="Enter Your Name">
+                <div class="alert name-alert">Special Characters and Numbers not allowed</div>
+              </div>
+              <div class="col-md-6 my-3">
+                <input type="email"  id="uEmail" name="email" class="form-control mb-2 " placeholder="Enter Email">
+                <div class="alert name-alert">Enter valid email. *Ex: xxx@yyy.zzz</div>
+              </div>
+              <div class="col-md-6 my-3">
+                <input id="uphone" name="uphone"  class="form-control mb-2 " placeholder="Enter phone">
+                <div class="alert name-alert">Enter valid Phone Number</div>
+              </div>
+              <div class="col-md-6 my-3">
+                <input id="uage" name="uage" class="form-control mb-2 " placeholder="Enter Age">
+                <div class="alert name-alert">Enter valid Age</div>
+
+              </div>
+              <div class="col-md-6 my-3">
+                <input type="password" name="pass"  id="pass" class="form-control mb-2 " placeholder="Enter Password">
+                <div class="alert name-alert">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+              </div>
+              <div class="col-md-6 my-3">
+                <input type="password" id="rePass" name="rePass" class="form-control mb-2 " placeholder="ReEnter Password">
+                <div class="alert name-alert"> Reenter password</div>
+
+              </div>
+              <button id="btn-submit" disabled class="btn btn-danger ">submit</button>
+            </form>
+            </div>
+            
+          </div>
+
+
+        </section>
+
+
+
+
+
+
+       
+
+
+        
+
+    </main>
+   
+   
+    
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
